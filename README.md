@@ -8,7 +8,7 @@ The study examines how the Maintainability Index (MI) behaves on the reference s
 
 | Path | Description |
 |---|---|
-| `ISRITI.ipynb` | Single notebook that reproduces every number, table and figure in the paper |
+| `analysis.ipynb` | Single notebook that reproduces every number, table and figure in the paper |
 | `results/metrics_all.csv` | Static metrics and four MI variants for all HumanEval and MBPP reference solutions |
 | `results/humaneval_docstring_ablation.csv` | HumanEval programs measured with and without docstrings |
 | `results/bigcodebench_metrics.csv` | Static metrics and MI variants for BigCodeBench reference solutions |
