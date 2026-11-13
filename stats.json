@@ -1,0 +1,180 @@
+{
+  "radon_version": "6.0.1",
+  "radon_peak_pct": 57.5,
+  "sei_peak_pct": 102.8,
+  "table1": {
+    "HumanEval": {
+      "loc": "19.00 [15.00, 25.00]",
+      "lloc": "8.00 [5.00, 11.00]",
+      "comment_pct": "142.86 [100.00, 250.00]",
+      "cc_total": "3.00 [2.00, 4.25]",
+      "h_volume": "29.77 [4.75, 67.09]",
+      "prompt_share": "0.66 [0.55, 0.84]",
+      "mi_radon": "86.53 [75.08, 93.01]",
+      "mi_vs": "68.52 [63.98, 74.89]"
+    },
+    "MBPP": {
+      "loc": "5.00 [3.00, 9.00]",
+      "lloc": "5.00 [4.00, 9.00]",
+      "comment_pct": "0.00 [0.00, 0.00]",
+      "cc_total": "2.00 [1.00, 4.00]",
+      "h_volume": "15.51 [2.00, 60.77]",
+      "prompt_share": "0.00 [0.00, 0.00]",
+      "mi_radon": "76.77 [67.48, 87.22]",
+      "mi_vs": "72.82 [65.47, 79.74]"
+    }
+  },
+  "counts": {
+    "HumanEval": {
+      "n": 164,
+      "beyond_radon_peak": 154,
+      "zero_comment": 0,
+      "zero_volume": 15,
+      "mi_radon_100": 23
+    },
+    "MBPP": {
+      "n": 974,
+      "beyond_radon_peak": 0,
+      "zero_comment": 971,
+      "zero_volume": 233,
+      "mi_radon_100": 233
+    }
+  },
+  "term_sd": {
+    "comment": 19.24,
+    "structural": 8.08
+  },
+  "table2": [
+    {
+      "benchmark": "HumanEval",
+      "n": 149,
+      "variant": "mi_radon",
+      "cc_total": 0.175,
+      "h_volume": 0.003,
+      "lloc": 0.442,
+      "comment_pct": -0.815
+    },
+    {
+      "benchmark": "HumanEval",
+      "n": 149,
+      "variant": "mi_sei",
+      "cc_total": -0.195,
+      "h_volume": -0.32,
+      "lloc": -0.131,
+      "comment_pct": -0.249
+    },
+    {
+      "benchmark": "HumanEval",
+      "n": 149,
+      "variant": "mi_vs",
+      "cc_total": -0.73,
+      "h_volume": -0.838,
+      "lloc": -0.923,
+      "comment_pct": 0.69
+    },
+    {
+      "benchmark": "MBPP",
+      "n": 741,
+      "variant": "mi_radon",
+      "cc_total": -0.748,
+      "h_volume": -0.858,
+      "lloc": -0.928,
+      "comment_pct": 0.051
+    },
+    {
+      "benchmark": "MBPP",
+      "n": 741,
+      "variant": "mi_sei",
+      "cc_total": -0.749,
+      "h_volume": -0.859,
+      "lloc": -0.93,
+      "comment_pct": 0.03
+    },
+    {
+      "benchmark": "MBPP",
+      "n": 741,
+      "variant": "mi_vs",
+      "cc_total": -0.749,
+      "h_volume": -0.861,
+      "lloc": -0.931,
+      "comment_pct": -0.034
+    }
+  ],
+  "variant_agreement": {
+    "HumanEval": {
+      "radon~vs": [
+        -0.29,
+        0.00033
+      ],
+      "radon~vs CI": [
+        -0.431,
+        -0.123
+      ],
+      "radon~sei": [
+        0.641,
+        1.2e-18
+      ],
+      "sei~vs": [
+        0.227,
+        0.0055
+      ]
+    },
+    "MBPP": {
+      "radon~vs": [
+        0.996,
+        0.0
+      ],
+      "radon~vs CI": [
+        0.989,
+        1.0
+      ],
+      "radon~sei": [
+        1.0,
+        0.0
+      ],
+      "sei~vs": [
+        0.998,
+        0.0
+      ]
+    }
+  },
+  "table3": {
+    "with": {
+      "median comment %": 133.3,
+      "median radon MI": 85.1,
+      "radon vs cc_total": 0.182,
+      "radon vs h_volume": -0.001,
+      "radon vs lloc": 0.445,
+      "radon vs VS": -0.29
+    },
+    "without": {
+      "median comment %": 0.0,
+      "median radon MI": 69.8,
+      "radon vs cc_total": -0.729,
+      "radon vs h_volume": -0.81,
+      "radon vs lloc": -0.937,
+      "radon vs VS": 1.0
+    }
+  },
+  "ablation_same_code": {
+    "n": 149,
+    "LLOC diff (median)": 1.0,
+    "radon kept~removed": [
+      -0.313,
+      0.0001
+    ],
+    "radon kept~removed CI": [
+      -0.452,
+      -0.145
+    ],
+    "SEI kept~removed": [
+      0.238,
+      0.0035
+    ],
+    "VS kept~removed": [
+      0.998,
+      3.9e-174
+    ],
+    "median |rank shift|": 58.5
+  }
+}

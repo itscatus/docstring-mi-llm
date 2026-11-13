@@ -1,0 +1,77 @@
+{
+  "gemini-lite":{
+    "model":"gemini-3.5-flash-lite",
+    "n_generated":164,
+    "n_parsed":164,
+    "n_passed":160,
+    "pass_rate":0.976,
+    "n_analysed":135,
+    "model_keeps_docstring":1.0,
+    "median_comment_pct model\/ref":[
+      140.0,
+      133.3
+    ],
+    "P1 median diff (model-ref)":-0.1,
+    "P1 model higher (%)":37.8,
+    "P1 wilcoxon p":0.5,
+    "P1 rank-biserial":-0.071,
+    "P2 median diff (model-ref)":0.0,
+    "P2 model higher (%)":37.0,
+    "P2 wilcoxon p":0.055,
+    "P2 rank-biserial":-0.204,
+    "P3 median diff (model-ref)":0.0,
+    "P3 model higher (%)":37.0,
+    "P3 wilcoxon p":0.067,
+    "P3 rank-biserial":-0.195
+  },
+  "gpt-oss":{
+    "model":"openai\/gpt-oss-120b",
+    "n_generated":164,
+    "n_parsed":163,
+    "n_passed":159,
+    "pass_rate":0.97,
+    "n_analysed":143,
+    "model_keeps_docstring":1.0,
+    "median_comment_pct model\/ref":[
+      216.7,
+      133.3
+    ],
+    "P1 median diff (model-ref)":-11.44,
+    "P1 model higher (%)":18.2,
+    "P1 wilcoxon p":0.0,
+    "P1 rank-biserial":-0.726,
+    "P2 median diff (model-ref)":-3.84,
+    "P2 model higher (%)":24.5,
+    "P2 wilcoxon p":0.0000000059,
+    "P2 rank-biserial":-0.577,
+    "P3 median diff (model-ref)":-3.73,
+    "P3 model higher (%)":24.5,
+    "P3 wilcoxon p":0.0000000075,
+    "P3 rank-biserial":-0.573
+  },
+  "qwen":{
+    "model":"qwen\/qwen3.8-27b",
+    "n_generated":164,
+    "n_parsed":161,
+    "n_passed":155,
+    "pass_rate":0.945,
+    "n_analysed":139,
+    "model_keeps_docstring":0.986,
+    "median_comment_pct model\/ref":[
+      122.2,
+      133.3
+    ],
+    "P1 median diff (model-ref)":0.0,
+    "P1 model higher (%)":45.3,
+    "P1 wilcoxon p":0.48,
+    "P1 rank-biserial":0.072,
+    "P2 median diff (model-ref)":-1.36,
+    "P2 model higher (%)":28.8,
+    "P2 wilcoxon p":0.000035,
+    "P2 rank-biserial":-0.432,
+    "P3 median diff (model-ref)":-1.17,
+    "P3 model higher (%)":30.2,
+    "P3 wilcoxon p":0.000067,
+    "P3 rank-biserial":-0.414
+  }
+}
