@@ -20,7 +20,7 @@ The study examines how the Maintainability Index (MI) behaves on the reference s
 
 ## How to run
 
-1. Open `ISRITI.ipynb` in Jupyter or Google Colab.
+1. Open `analysis.ipynb` in Jupyter or Google Colab.
 2. Run all cells. The first cell installs `radon==6.0.1`, `scipy`, `numpy`, `pandas`, `matplotlib` and `pyarrow`.
 3. The benchmarks are downloaded automatically into `data/`.
 
